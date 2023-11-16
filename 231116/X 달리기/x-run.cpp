@@ -5,12 +5,12 @@ int main() {
     int X,speed,dis;
     scanf("%d",&X);
     int ans=0;
-    for(speed=1;dis*2<X;speed++){
+    for(speed=1;dis*2+speed<X;speed++){
         ans++;
         dis+=speed;
     }
     ans=ans*2;
-    if(X-dis*2-speed>0){
+    if(X-dis*2>0){
         ans++;    
     }
     printf("%d",ans);
