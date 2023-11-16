@@ -16,14 +16,14 @@ int main() {
             pro[c-'A']=1;
         } 
         // 앞번호
-        if (u==0 && i>=p) { // 다봄
-            for(int i=0;i<n;i++){
-                pro[i]=1;
-            }
-            break;
-        } 
+        // if (u==0) { // 다봄
+        //     for(int i=0;i<n;i++){
+        //         pro[i]=1;
+        //     }
+        //     break;
+        // } 
         // 앞에 봤던 사람일때
-        if (preu==u){
+        if (preu==u && i==p){
             pro[prec-'A']=1;
         }
         prec=c;
