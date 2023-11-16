@@ -15,7 +15,7 @@ int main() {
         cin >> c[i] >> u[i];
     }
 
-    if (u[p-1]==0) return 0;
+    if (u[p]==0) return 0;
 
     for(int i=0;i<n;i++){
         // if (pro[i]==0) cout << (char) (i+'A')<< ' ';
@@ -29,7 +29,7 @@ int main() {
             }
         }
 
-        if (flag== false) cout << (char) (i+'A')<< " ";
+        if (flag== false) cout << (char)('A'+i)<< " ";
 
 
     }
